@@ -1,7 +1,7 @@
 package HW1;
 
 public class Homework1 {
-	public static void main(String[] Args){
+	public static void main(String[] Args) {
 		int num1 = 6, num2 = 12;
 		System.out.println("==========第一題==========");
 		System.out.println("請設計一支Java程式，計算12，6這兩個數值的和與積");
@@ -33,23 +33,23 @@ public class Homework1 {
 
 		System.out.println("==========第五題==========");
 		System.out.println("某人在銀行存入150萬，銀行利率為2%，如果每年利息都繼續存入銀行，請用程式計算10年後，本金加利息共有多少錢？");
-		/*複利公式推導 = 期初本金*(1+rate)。
-		 * 意思是每期末的終值等於該期之期初本金乘上(1+rate)。
-		 * 因此，可以知道第一年的本+息= 1500000*1.02 => 下年本金 = 1500000 *1.02*1.02 = 1500000*1.02^2
-		 * 因此，第10年本+息 = 1500000 * 1.02^9*/
+		/*
+		 * 複利公式推導 = 期初本金*(1+rate)。 意思是每期末的終值等於該期之期初本金乘上(1+rate)。 因此，可以知道第一年的本+息=
+		 * 1500000*1.02 => 下年本金 = 1500000 *1.02*1.02 = 1500000*1.02^2 因此，第10年本+息 =
+		 * 1500000 * 1.02^9
+		 */
 		int capital = 1500000;
 		double intrestRate = 0.02;
-		double totalMoney = capital * Math.pow((1+intrestRate), 9);
+		double totalMoney = capital * Math.pow((1 + intrestRate), 9);
 		String totalMoneyStr = String.format("%.2f", totalMoney);
 		System.out.println("10年後本金+利息共" + totalMoneyStr + "元\n");
-		
+
 		System.out.println("==========第六題==========");
-		System.out.println("請寫一隻程式，利用System.out.println()印出以下三個運算式結果:"
-				+"5 + 5, 5 + ‘5’ , 5 + “5” 並請用註解各別說明答案的產生原因"); 
-		//char '5' = 53
-		System.out.println(5 + 5); //10，單純的數字相加
-		System.out.println(5 + '5'); //58，因為char 'a'對照ASCII的值為53，一樣為兩個數字相加
-		System.out.println(5 + "5"); //55，字串的串接
+		System.out.println("請寫一隻程式，利用System.out.println()印出以下三個運算式結果:" + "5 + 5, 5 + ‘5’ , 5 + “5” 並請用註解各別說明答案的產生原因");
+		// char '5' = 53
+		System.out.println(5 + 5); // 10，單純的數字相加
+		System.out.println(5 + '5'); // 58，因為char 'a'對照ASCII的值為53，一樣為兩個數字相加
+		System.out.println(5 + "5"); // 55，字串的串接
 	}
 
 }
