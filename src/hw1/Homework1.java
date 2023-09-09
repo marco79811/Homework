@@ -1,4 +1,4 @@
-package HW1;
+package hw1;
 
 public class Homework1 {
 	public static void main(String[] Args) {
@@ -54,4 +54,4 @@ public class Homework1 {
 
 }
 
-//int r1 = (int)(Math.random()*31);
+
