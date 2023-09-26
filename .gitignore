@@ -3,3 +3,6 @@ bin/
 .project
 .settings/
 .DS_Store
+src/interface_design/
+src/practice/
+

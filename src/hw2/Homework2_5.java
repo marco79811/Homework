@@ -14,6 +14,6 @@ public class Homework2_5 {
 			}
 		}
 		count = 49 - count;
-		System.out.println("阿文能選的數字有共"+count+ "個");
+		System.out.println("阿文能選的數字有共" + count + "個");
 	}
 }
